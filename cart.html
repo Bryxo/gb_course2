@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Shop_byv_Lesson6_cart</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="top">
+         <header class="header">
+            <nav>
+               <ul class="nav container">
+                  <li class="nav__ref">
+                     <a class="nav__logo" href="index.html"><img src="img_nav/nav_logo.png" alt="logo"></a>
+                     <form class="nav__search" action="#">
+                        <button class="nav__btn__search"><img src="img_nav/nav_search.svg" alt="search"></button>
+                        <input class="nav__box-search" type="text" placeholder="Рубашка">
+                     </form>
+                  </li>
+                  <li class="nav__menu">
+                     <div class="nav__menu_item">
+
+
+                        <label class="burg__menu_label" for="check">
+                           <img class="burg_img" src="img_nav/nav_menu.svg" alt="">
+                        </label>
+                     </div>
+
+
+                     <div class="burg">
+                        <div class="burg__menu">
+
+
+                           <label for="check">
+                              <div class="burg__closecross"><img src="cart_cross.svg" alt="close"></div>
+                           </label>
+
+
+
+                           <h3>menu</h3>
+                           <h4>man</h4>
+                           <ul class="burg__items">
+                              <li class="burg__item"><a href="#">Accessories</a></li>
+                              <li class="burg__item"><a href="#">Bags</a></li>
+                              <li class="burg__item"><a href="#">Denim</a></li>
+                              <li class="burg__item"><a href="#">T-Shirts</a></li>
+                              <li class="burg__item"><a href="#">Polos</a></li>
+                           </ul>
+                           <h4>women</h4>
+                           <ul class="burg__items">
+                              <li class="burg__item"><a href="#">Accessories</a></li>
+                              <li class="burg__item"><a href="#">Bags</a></li>
+                              <li class="burg__item"><a href="#">Denim</a></li>
+                              <li class="burg__item"><a href="#">T-Shirts</a></li>
+                              <li class="burg__item"><a href="#">Polos</a></li>
+                           </ul>
+                           <h4>kids</h4>
+                           <ul class="burg__items">
+                              <li class="burg__item"><a href="#">Accessories</a></li>
+                              <li class="burg__item"><a href="#">Bags</a></li>
+                              <li class="burg__item"><a href="#">Denim</a></li>
+                              <li class="burg__item"><a href="#">T-Shirts</a></li>
+                              <li class="burg__item item--last"><a href="#">Polos</a></li>
+                           </ul>
+                        </div>
+                     </div>
+
+
+
+
+                     <div class="nav__menu_item user"><a href="registration.html"><img src="img_nav/nav_user.svg"
+                              alt=""></a>
+                     </div>
+                     <div class="nav__menu_item "><a href="cart.html"><img src="img_nav/nav_cart.svg" alt=""></a>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+         </header>
+         <div class="content">
+            <section class="content_catalog__promo">
+               <div class="content_catalog__promo_main container">
+                  <h2 class="cart_title">Shopping cart</h2>
+               </div>
+            </section>
+            <main>
+               <section class="cart container">
+                  <div class="cart_cards">
+                     <div class="cart_card">
+                        <form action="#">
+                           <button class="cart_card_closecross"><svg width="18" height="18" viewBox="0 0 18 18"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                              </svg></button>
+                        </form>
+                        <img class="cart_card_image" src="img_catalog_product/cat_product3.png" alt="product">
+                        <div class="cart_card_description">
+                           <h3 class="cart_card_description_title">Mango people &nbsp; t-shirt</h3>
+                           <p class="cart_card_description_parameters cart--price">Price: </p>
+                           <p class="cart_card_description_parameters cart--color">Color: </p>
+                           <p class="cart_card_description_parameters cart--size">Size: </p>
+                           <form action="">
+                              <p class="cart_card_description_parameters">Quantity: <input class="cart--quantity"
+                                    type="number" min="1" max="90" step="1" value="1"></p>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="cart_card">
+                        <form action="#">
+                           <button class="cart_card_closecross"><svg width="18" height="18" viewBox="0 0 18 18"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                              </svg></button>
+                        </form>
+                        <div><img class="cart_card_image" src="img_catalog_product/cat_product2.png" alt="product">
+                        </div>
+                        <div class="cart_card_description">
+                           <h3 class="cart_card_description_title">Mango people &nbsp; t-shirt</h3>
+                           <p class="cart_card_description_parameters cart--price">Price: </p>
+                           <p class="cart_card_description_parameters cart--color">Color: </p>
+                           <p class="cart_card_description_parameters cart--size">Size: </p>
+
+                           <form action="">
+                              <p class="cart_card_description_parameters">Quantity: <input class="cart--quantity"
+                                    type="number" min="1" max="90" step="1" value="1"></p>
+                           </form>
+
+
+                        </div>
+                     </div>
+                     <form action="#">
+                        <div class="cart_buttons">
+                           <button class="cart_card_btn btn--clear">Clear shopping cart</button>
+                           <button class="cart_card_btn btn--continue">Continue shopping</button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="cart_order">
+                     <div class="cart_order_address">
+                        <h4 class="cart_order_address_title">Shipping adress</h4>
+                        <input class="cart_order_address_input" type="text" placeholder="Bangladesh">
+                        <input class="cart_order_address_input" type="text" placeholder="State">
+                        <input class="cart_order_address_input" type="text" placeholder="Postcode / Zip">
+                        <form action="#">
+                           <button class="cart_order_address_btn">Get a quote</button>
+                        </form>
+                     </div>
+                     <div class="cart_order_proceed">
+                        <div class="cart_order_proceed_price_flex">
+                           <p class="cart_order_proceed_subprice">Sub total</p>
+                           <p class="cart_order_proceed_grandprice">Grand total</p>
+                        </div>
+                        <div class="cart_order_proceed_btn_flex">
+                           <div class="cart_order_proceed_line"></div>
+                           <form action="#">
+                              <button class="cart_order_proceed_btn">Proceed to checkout</button>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </main>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="footer__middle">
+         <div class="footer__middle_items container">
+            <div class="footer__middle_left">
+               <img class="footer__middle_image" src="img_footer/footer__middle_image.png" alt="">
+               <p class="footer__middle_left_text">&quot;Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a
+                     pulvinar purus condimentum</i>&quot;</p>
+            </div>
+            <div class="footer__middle_right">
+               <p class="footer__middle_right_title"> <b>SUBSCRIBE</b></p>
+               <p class="footer__middle_right_subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+               <form action="#">
+                  <div class="footer__middle_right_subscribe">
+                     <input class="input_email" type="email" placeholder="Enter Your Email"><button
+                        class="btn_subscribe">Subscribe</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="footer__down">
+         <div class="footer__down_items container">
+            <div class="footer__down_item1">&copy;2021 Brand All Rights Reserved.</div>
+            <div class="footer__down_item2">
+               <ul class="footer__down_ul">
+                  <li>
+                     <a class="ref" href="#">
+                        <div class="footer__down_social_bgd">
+                           <img class="img" src="img_footer/footer_down_facebook.svg" alt="facebook">
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="ref" href="#">
+                        <div class="footer__down_social_bgd">
+                           <img src="img_footer/footer_down_instagram.svg" alt="instagram">
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="ref" href="#">
+                        <div class="footer__down_social_bgd">
+                           <img src="img_footer/footer_down_pinterest.svg" alt="pinterest">
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="ref" href="#">
+                        <div class="footer__down_social_bgd">
+                           <img src="img_footer/footer_down_twitter.svg" alt="twitter">
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+.header {
+   background: #222222;
+   padding: 17px 0;
+   z-index: 5;
+}
+//-**************************
+//-******** nav ********
+//-**************************
+.nav {
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none; 
+   &__logo {
+      padding-right: 31px;
+   }  
+   &__btn__search {
+      background: #222222;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+   }
+   &__ref {
+      display: flex;
+      align-items: center; 
+   } 
+   &__menu {
+      display: flex;
+      align-items: center;
+      position: relative;
+      &_item:not(:last-child) {
+         padding-right: 33px;
+         position: relative;
+      }
+   }
+   &__box-search {
+      display: none;
+   }   
+   &__search {
+   position: relative;
+   } 
+   &__search:hover .nav__box-search {
+      display: block;
+      width: 300px;
+      height: 50px;
+      background-color: #9F9F9F;
+      position: absolute;
+      top: 5px;
+      left: 15px;
+   }
+}
+.burg_img {
+   cursor: pointer;
+}
+.burg {
+   width: 232px;
+   padding-left: 24px;
+   box-shadow: 0px 0px 9px 6px rgba(0,0,0,0.21);
+   background: #FFFFFF;
+   position: absolute;
+   left: 169px;
+   top: 54px;
+   // display: none;
+   &__menu {
+      
+   }
+   & h3 {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight:700;
+      color: #000000;
+      text-transform: uppercase;
+      padding-top: 37px;
+      margin-bottom: 4px;
+   }
+   & h4 {
+      font-size: 14px;
+      line-height: 17px;
+      color: #F16D7F;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 12px;
+   }   
+   &__menu_label {
+      display: flex;
+      align-items: center;
+      position: relative;
+      //! убрать комментарий
+      // display: none;
+   }
+
+   &__closecross  {
+         position: absolute;
+         right: 16px;
+         top: 16px;
+         cursor: pointer;
+   }
+   &__closecross > img {
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+   }
+   &__items {
+      list-style-type:none;
+   }  
+   &__item {
+      text-decoration: none;
+      padding-left: 25px;
+      margin-bottom: 11px;
+   } 
+   &__item:last-child {
+      margin-bottom: 0px;
+   }
+   &__items .item--last {
+      margin-bottom: 11px;
+   }   
+   &__item > a {
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 17px;
+      color: #6F6E6E;
+   }
+}   
+
+
+// !!!НЕ РАБОТАЕТ .. НЕ ЗНАЮ ПОЧЕМУ (((( 
+   .burg__menu_input:checked .burg {
+      display: none;
+      cursor: pointer;
+   } 
+
+

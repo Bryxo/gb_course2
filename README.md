@@ -1,1 +1,5 @@
-# gb_course2
+# gb_2course
+Practice
+
+My first trying in frontend development=)
+Its wonderful
