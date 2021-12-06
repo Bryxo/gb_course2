@@ -54,14 +54,14 @@
    cursor: pointer;
 }
 .burg {
+   height: calc(100vh - 76px);
    width: 232px;
    padding-left: 24px;
    box-shadow: 0px 0px 9px 6px rgba(0,0,0,0.21);
    background: #FFFFFF;
    position: absolute;
-   left: 169px;
-   top: 54px;
-   // display: none;
+   display: none;
+   
    &__menu {
       
    }
@@ -86,10 +86,10 @@
       display: flex;
       align-items: center;
       position: relative;
-      //! убрать комментарий
-      // display: none;
-   }
-
+   }   
+      &__menu_input {
+         display: none;
+      }
    &__closecross  {
          position: absolute;
          right: 16px;
@@ -104,11 +104,24 @@
    &__items {
       list-style-type:none;
    }  
+
+   // &__item:hover {
+   //    color: #F16D7F;
+   //    transform: scale(1.1);
+   // } 
    &__item {
       text-decoration: none;
       padding-left: 25px;
       margin-bottom: 11px;
    } 
+   &__item:hover {
+      width: 100%;
+      transform: scale(1.3);
+   }  
+   &__item:hover  a {
+      color: #F16D7F;
+   }  
+
    &__item:last-child {
       margin-bottom: 0px;
    }
@@ -123,11 +136,77 @@
    }
 }   
 
+.burg__menu_input:checked~ .burg {
+   display: block;
+   cursor: pointer;
+   left: 169px;
+   top: 54px;
 
-// !!!НЕ РАБОТАЕТ .. НЕ ЗНАЮ ПОЧЕМУ (((( 
-   .burg__menu_input:checked .burg {
-      display: none;
-      cursor: pointer;
-   } 
+   animation: burg_anim 0.2s ;
+} 
 
-
+@keyframes burg_anim {
+   0%  {
+      transform: scale(0.1);
+   }
+   5% {
+      transform: scale(0.15);
+   }
+   10%  {
+      transform: scale(0.2);
+   }
+   15% {
+      transform: scale(0.25);
+   }
+   20%  {
+      transform: scale(0.3);
+   }
+   25% {
+      transform: scale(0.35);
+   }
+   30%  {
+      transform: scale(0.4);
+   }
+   35% {
+      transform: scale(0.45);
+   }
+   40%  {
+      transform: scale(0.5);
+   }
+   45% {
+      transform: scale(0.55);
+   }
+   50%  {
+      transform: scale(0.6);
+   }
+   55% {
+      transform: scale(0.65);
+   }
+   60% {
+      transform: scale(0.7);
+   }
+   65%  {
+      transform: scale(0.8);
+   }
+   70% {
+      transform: scale(0.9);
+   }
+   75% {
+      transform: scale(1);
+   }
+   80% {
+      transform: scale(1.1);
+   }
+   85% {
+      transform: scale(1.15);
+   }
+   90% {
+      transform: scale(1.1);
+   }
+   95% {
+      transform: scale(1.05);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
