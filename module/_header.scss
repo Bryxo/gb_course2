@@ -149,7 +149,14 @@
       display: block;
       left: -63px;
       top: 54px;
-   
+      animation: burg_anim 0.2s ;
+   } 
+}
+@media (max-width:454px)  {
+   .burg__menu_input:checked~ .burg {
+      display: block;
+      left: -157px;
+      top: 50px;
       animation: burg_anim 0.2s ;
    } 
 }
