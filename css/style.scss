@@ -38,7 +38,8 @@ body {
       align-items: center;
       background: url(../index_promo_man.png);
       background-repeat: no-repeat;
-      background-position: -220px;
+      background-position: -360px;
+      background-size: 100vh;
    }
    &_right {
       max-width: 400px;
@@ -146,7 +147,7 @@ details>summary {
             margin-right: 28px;
          }
    }
-    &_items_left[open]>summary {
+   &_items_left[open]>summary {
       color: #F16D7F; 
       padding: 10px 10px 5px 10px;
       margin-bottom: 10px;
@@ -1105,18 +1106,45 @@ details>summary {
    .browse_all {
       margin-bottom: 65px;
    }
+   .content__promo {
+      background-size: 100vh;
+   } 
 }
+@media (max-width:1020px)  {
+.content__promo_main {
+      background-position: -285px;
+      background-size: 80vh;
+   }
+}
+@media (max-width:860px)  {
+   .content__promo_main {
+         background-position: -250px;
+         background-size: 70vh;
+      }
+}
+@media (max-width:800px)  {
+   .content__promo_main {
+         background-position: -210px;
+         background-size: 60vh;
+      }
+} 
+@media (max-width:800px)  {
+   .content__promo_main {
+         background-position: -170px;
+         background-size: 50vh;
+      }
+} 
 
 @media (max-width:768px)  {
-   .content__promo {
-      // height: 368px;
-   }
    .container {
       max-width: 756px;
    }
+   .brand {
+      font-size: 38px;
+   }
    .content__promo_main {
       background-position: -99px;
-      background-size: 51%;
+      background-size: 40vh;
    }
    .catalogs {
       margin-bottom: 65px;
