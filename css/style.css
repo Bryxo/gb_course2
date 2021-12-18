@@ -20,6 +20,25 @@
 
 .nav__logo {
   padding-right: 31px;
+  display: inline-block;
+}
+
+.nav__logo:hover {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.nav__logo > img:hover {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .nav__btn__search {
@@ -71,8 +90,13 @@
   left: 15px;
 }
 
-.burg_img {
+.svg-hover {
+  fill: #E8E8E8;
   cursor: pointer;
+}
+
+.svg-hover:hover {
+  fill: #6b6969;
 }
 
 .burg {
@@ -84,6 +108,7 @@
   background: #FFFFFF;
   position: absolute;
   display: none;
+  z-index: 5;
 }
 
 .burg h3 {
@@ -161,6 +186,7 @@
 }
 
 .burg__item > a {
+  display: block;
   text-decoration: none;
   font-size: 14px;
   line-height: 17px;
@@ -171,8 +197,9 @@
   display: block;
   left: 169px;
   top: 54px;
-  -webkit-animation: burg_anim 0.2s;
-          animation: burg_anim 0.2s;
+  -webkit-animation: burg_anim .1s;
+          animation: burg_anim .1s;
+  overflow: auto;
 }
 
 @media (max-width: 1624px) {
@@ -180,8 +207,9 @@
     display: block;
     left: -63px;
     top: 54px;
-    -webkit-animation: burg_anim 0.2s;
-            animation: burg_anim 0.2s;
+    -webkit-animation: burg_anim 0.1s;
+            animation: burg_anim 0.1s;
+    overflow: auto;
   }
 }
 
@@ -190,182 +218,183 @@
     display: block;
     left: -157px;
     top: 50px;
-    -webkit-animation: burg_anim 0.2s;
-            animation: burg_anim 0.2s;
+    -webkit-animation: burg_anim 0.1s;
+            animation: burg_anim 0.1s;
+    overflow: auto;
   }
 }
 
 @-webkit-keyframes burg_anim {
   0% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    -webkit-transform: scale(0.1) rotate(18deg);
+            transform: scale(0.1) rotate(18deg);
   }
   5% {
-    -webkit-transform: scale(0.15);
-            transform: scale(0.15);
+    -webkit-transform: scale(0.15) rotate(36deg);
+            transform: scale(0.15) rotate(36deg);
   }
   10% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    -webkit-transform: scale(0.2) rotate(54deg);
+            transform: scale(0.2) rotate(54deg);
   }
   15% {
-    -webkit-transform: scale(0.25);
-            transform: scale(0.25);
+    -webkit-transform: scale(0.25) rotate(72deg);
+            transform: scale(0.25) rotate(72deg);
   }
   20% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
+    -webkit-transform: scale(0.3) rotate(90deg);
+            transform: scale(0.3) rotate(90deg);
   }
   25% {
-    -webkit-transform: scale(0.35);
-            transform: scale(0.35);
+    -webkit-transform: scale(0.35) rotate(108deg);
+            transform: scale(0.35) rotate(108deg);
   }
   30% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    -webkit-transform: scale(0.4) rotate(126deg);
+            transform: scale(0.4) rotate(126deg);
   }
   35% {
-    -webkit-transform: scale(0.45);
-            transform: scale(0.45);
+    -webkit-transform: scale(0.45) rotate(144deg);
+            transform: scale(0.45) rotate(144deg);
   }
   40% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.5) rotate(162deg);
+            transform: scale(0.5) rotate(162deg);
   }
   45% {
-    -webkit-transform: scale(0.55);
-            transform: scale(0.55);
+    -webkit-transform: scale(0.55) rotate(180deg);
+            transform: scale(0.55) rotate(180deg);
   }
   50% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.6) rotate(198deg);
+            transform: scale(0.6) rotate(198deg);
   }
   55% {
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
+    -webkit-transform: scale(0.65) rotate(216deg);
+            transform: scale(0.65) rotate(216deg);
   }
   60% {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: scale(0.7) rotate(234deg);
+            transform: scale(0.7) rotate(234deg);
   }
   65% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.8) rotate(252deg);
+            transform: scale(0.8) rotate(252deg);
   }
   70% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.9) rotate(270deg);
+            transform: scale(0.9) rotate(270deg);
   }
   75% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.95) rotate(288deg);
+            transform: scale(0.95) rotate(288deg);
   }
   80% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(0.96) rotate(306deg);
+            transform: scale(0.96) rotate(306deg);
   }
   85% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(0.98) rotate(324deg);
+            transform: scale(0.98) rotate(324deg);
   }
   90% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1) rotate(342deg);
+            transform: scale(1) rotate(342deg);
   }
   95% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1) rotate(342deg);
+            transform: scale(1) rotate(342deg);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
 }
 
 @keyframes burg_anim {
   0% {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    -webkit-transform: scale(0.1) rotate(18deg);
+            transform: scale(0.1) rotate(18deg);
   }
   5% {
-    -webkit-transform: scale(0.15);
-            transform: scale(0.15);
+    -webkit-transform: scale(0.15) rotate(36deg);
+            transform: scale(0.15) rotate(36deg);
   }
   10% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    -webkit-transform: scale(0.2) rotate(54deg);
+            transform: scale(0.2) rotate(54deg);
   }
   15% {
-    -webkit-transform: scale(0.25);
-            transform: scale(0.25);
+    -webkit-transform: scale(0.25) rotate(72deg);
+            transform: scale(0.25) rotate(72deg);
   }
   20% {
-    -webkit-transform: scale(0.3);
-            transform: scale(0.3);
+    -webkit-transform: scale(0.3) rotate(90deg);
+            transform: scale(0.3) rotate(90deg);
   }
   25% {
-    -webkit-transform: scale(0.35);
-            transform: scale(0.35);
+    -webkit-transform: scale(0.35) rotate(108deg);
+            transform: scale(0.35) rotate(108deg);
   }
   30% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
+    -webkit-transform: scale(0.4) rotate(126deg);
+            transform: scale(0.4) rotate(126deg);
   }
   35% {
-    -webkit-transform: scale(0.45);
-            transform: scale(0.45);
+    -webkit-transform: scale(0.45) rotate(144deg);
+            transform: scale(0.45) rotate(144deg);
   }
   40% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
+    -webkit-transform: scale(0.5) rotate(162deg);
+            transform: scale(0.5) rotate(162deg);
   }
   45% {
-    -webkit-transform: scale(0.55);
-            transform: scale(0.55);
+    -webkit-transform: scale(0.55) rotate(180deg);
+            transform: scale(0.55) rotate(180deg);
   }
   50% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.6) rotate(198deg);
+            transform: scale(0.6) rotate(198deg);
   }
   55% {
-    -webkit-transform: scale(0.65);
-            transform: scale(0.65);
+    -webkit-transform: scale(0.65) rotate(216deg);
+            transform: scale(0.65) rotate(216deg);
   }
   60% {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    -webkit-transform: scale(0.7) rotate(234deg);
+            transform: scale(0.7) rotate(234deg);
   }
   65% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.8) rotate(252deg);
+            transform: scale(0.8) rotate(252deg);
   }
   70% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.9) rotate(270deg);
+            transform: scale(0.9) rotate(270deg);
   }
   75% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(0.95) rotate(288deg);
+            transform: scale(0.95) rotate(288deg);
   }
   80% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(0.96) rotate(306deg);
+            transform: scale(0.96) rotate(306deg);
   }
   85% {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+    -webkit-transform: scale(0.98) rotate(324deg);
+            transform: scale(0.98) rotate(324deg);
   }
   90% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1) rotate(342deg);
+            transform: scale(1) rotate(342deg);
   }
   95% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1) rotate(342deg);
+            transform: scale(1) rotate(342deg);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
 }
 
@@ -421,7 +450,8 @@ body {
           align-items: center;
   background: url(../index_promo_man.png);
   background-repeat: no-repeat;
-  background-position: -220px;
+  background-position: -215px;
+  background-size: 100vh;
 }
 
 .content__promo_right {
@@ -1787,15 +1817,42 @@ details > summary {
   .browse_all {
     margin-bottom: 65px;
   }
+  .content__promo {
+    background-size: 100vh;
+  }
+}
+
+@media (max-width: 1020px) {
+  .content__promo_main {
+    background-position: -280px;
+    background-size: 90vh;
+  }
+}
+
+@media (max-width: 888px) {
+  .content__promo_main {
+    background-position: -250px;
+    background-size: 80vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .content__promo_main {
+    background-position: -210px;
+    background-size: 70vh;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 756px;
   }
+  .brand {
+    font-size: 38px;
+  }
   .content__promo_main {
-    background-position: -99px;
-    background-size: 51%;
+    background-position: -171px;
+    background-size: 60vh;
   }
   .catalogs {
     margin-bottom: 65px;
@@ -1864,9 +1921,40 @@ details > summary {
   }
 }
 
+@media (max-width: 680px) {
+  .content__promo_main {
+    background-position: -155px;
+    background-size: 50vh;
+  }
+}
+
+@media (max-width: 630px) {
+  .content__promo_main {
+    background-position: -125px;
+    background-size: 40vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .content__promo_main {
+    background-position: -90px;
+    background-size: 30vh;
+  }
+}
+
+@media (max-width: 520px) {
+  .content__promo_main {
+    background-position: -60px;
+    background-size: 20vh;
+  }
+}
+
 @media (max-width: 454px) {
   .content__promo_main {
     background: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer__down {
     height: 143px;

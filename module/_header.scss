@@ -14,7 +14,21 @@
    list-style: none; 
    &__logo {
       padding-right: 31px;
-   }  
+      display: inline-block;
+   }
+   &__logo:hover {
+      transition: all 0.7s;
+      transform-origin: center;
+      transform: scale(1.5);
+   
+   }
+   &__logo > img:hover {
+      transition: all 0.7s;
+      transform-origin: center;
+
+      transform: rotate(-360deg);
+   }
+   
    &__btn__search {
       background: #222222;
       border: none;
@@ -50,8 +64,12 @@
       left: 15px;
    }
 }
-.burg_img {
+.svg-hover {
+   fill:#E8E8E8; 
    cursor: pointer;
+}
+.svg-hover:hover {
+   fill:#6b6969; 
 }
 .burg {
    height: calc(100vh - 76px);
@@ -61,7 +79,7 @@
    background: #FFFFFF;
    position: absolute;
    display: none;
-   
+   z-index: 5;
    &__menu {
       
    }
@@ -104,11 +122,6 @@
    &__items {
       list-style-type:none;
    }  
-
-   // &__item:hover {
-   //    color: #F16D7F;
-   //    transform: scale(1.1);
-   // } 
    &__item {
       text-decoration: none;
       padding-left: 25px;
@@ -121,7 +134,6 @@
    &__item:hover  a {
       color: #F16D7F;
    }  
-
    &__item:last-child {
       margin-bottom: 0px;
    }
@@ -129,6 +141,7 @@
       margin-bottom: 11px;
    }   
    &__item > a {
+      display: block;
       text-decoration: none;
       font-size: 14px;
       line-height: 17px;
@@ -140,8 +153,8 @@
    display: block;
    left: 169px;
    top: 54px;
-
-   animation: burg_anim 0.2s ;
+   animation: burg_anim .1s ;
+   overflow: auto;
 } 
 
 @media (max-width:1624px)  {
@@ -149,7 +162,8 @@
       display: block;
       left: -63px;
       top: 54px;
-      animation: burg_anim 0.2s ;
+      animation: burg_anim 0.1s;
+      overflow: auto;
    } 
 }
 @media (max-width:454px)  {
@@ -157,72 +171,73 @@
       display: block;
       left: -157px;
       top: 50px;
-      animation: burg_anim 0.2s ;
+      animation: burg_anim 0.1s;
+      overflow: auto;
    } 
 }
 
 @keyframes burg_anim {
    0%  {
-      transform: scale(0.1);
+      transform: scale(0.1) rotate(18deg);
    }
    5% {
-      transform: scale(0.15);
+      transform: scale(0.15) rotate(36deg);
    }
    10%  {
-      transform: scale(0.2);
+      transform: scale(0.2) rotate(54deg);
    }
    15% {
-      transform: scale(0.25);
+      transform: scale(0.25) rotate(72deg);
    }
    20%  {
-      transform: scale(0.3);
+      transform: scale(0.3) rotate(90deg);
    }
    25% {
-      transform: scale(0.35);
+      transform: scale(0.35) rotate(108deg);
    }
    30%  {
-      transform: scale(0.4);
+      transform: scale(0.4) rotate(126deg);
    }
    35% {
-      transform: scale(0.45);
+      transform: scale(0.45) rotate(144deg);
    }
    40%  {
-      transform: scale(0.5);
+      transform: scale(0.5) rotate(162deg);
    }
    45% {
-      transform: scale(0.55);
+      transform: scale(0.55) rotate(180deg);
    }
    50%  {
-      transform: scale(0.6);
+      transform: scale(0.6) rotate(198deg);
    }
    55% {
-      transform: scale(0.65);
+      transform: scale(0.65) rotate(216deg);
    }
    60% {
-      transform: scale(0.7);
+      transform: scale(0.7) rotate(234deg);
    }
    65%  {
-      transform: scale(0.8);
+      transform: scale(0.8) rotate(252deg);
    }
    70% {
-      transform: scale(0.9);
+      transform: scale(0.9) rotate(270deg);
    }
    75% {
-      transform: scale(1);
+      transform: scale(0.95) rotate(288deg);
    }
    80% {
-      transform: scale(1.1);
+      transform: scale(0.96) rotate(306deg);
    }
    85% {
-      transform: scale(1.15);
+      transform: scale(0.98) rotate(324deg);
    }
    90% {
-      transform: scale(1.1);
+      transform: scale(1) rotate(342deg);
    }
    95% {
-      transform: scale(1.05);
+      transform: scale(1) rotate(342deg);
    }
    100% {
-      transform: scale(1);
+      transform: scale(1) rotate(360deg);
    }
 }
